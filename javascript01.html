@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-image: url(img01.jpg);
+            background-repeat: no-repeat;
+            background-size : 100% 100%;
+            text-align: center;
+            color: white;
+        }
+
+        input .userSpaceInput {
+            border-left-width:0;
+            border-right-width:0;
+            border-top-width:0;
+            border-bottom-width:1;
+            outline: 0;
+
+        }
+    </style>
+</head>
+<body>
+    <script>
+       const clock = document.querySelector("#clock");
+       function getClock() {
+            const date = new Date();
+            clock.innerText = `${date.getHours()}:${date.getMinutes()}:${00 + date.getSeconds()}`;
+        }
+
+        setInterval(getClock, 1000);
+
+
+
+
+    </script>
+
+    <div class="timeZone">
+        <h1 id="clock"></h1> : <h1 id="minutes"></h1> <h1 id="seconds"></h1>
+    </div>
+
+    <br>
+
+    <div class="userSpace">
+        <input class="userSpaceInput" type="text" name="nameValue" placeholder="What is your name?">
+        <br>
+        <input class="userSpaceInput" type="text" name="focusValue" placeholder="What is your main focus today?">
+        <br>
+        <input class="userSpaceInput" type="text" name="todoValue" placeholder="Add todo here...">
+    </div>
+
+    <br>
+
+    <div class="info">
+        <input class="infoInput" type="text" name="nameValue" placeholder="What is your name?">
+        <input class="infoInput" type="text" name="focusValue" placeholder="What is your main focus today?">
+    </div>
+
+    <input>
+    <input>
+</body>
+</html>
